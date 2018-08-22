@@ -1,4 +1,5 @@
 name := "play-calculator"
+
 organization := "com.calc"
 
 version := "1.0-SNAPSHOT"
@@ -6,6 +7,8 @@ version := "1.0-SNAPSHOT"
 lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 scalaVersion := "2.12.6"
+
+lazy val akkaVersion = "2.5.14"
 
 libraryDependencies += guice
 
