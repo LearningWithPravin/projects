@@ -1,5 +1,6 @@
 calculator-play-akka/*/.idea
 calculator-play-akka/*/target
+calculator-play-akka/*/logs
 calculator-play-akka/*/sbt.bat
 calculator-play-akka/*/sbt
 calculator-play-akka/*/project/target
