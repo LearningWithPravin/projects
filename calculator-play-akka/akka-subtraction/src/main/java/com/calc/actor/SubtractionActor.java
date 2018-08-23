@@ -14,8 +14,8 @@ public class SubtractionActor extends AbstractActor {
                         Double[].class,
                         msg -> {
                             log.info("Received msg :: {} + {}", msg[0], msg[1]);
-                            sender().tell(msg[0] + msg[1], self());
-                            log.info("Returned response :: {}", msg[0] + msg[1]);
+                            sender().tell(msg[0] - msg[1], self());
+                            log.info("Returned response :: {}", msg[0] - msg[1]);
                         })
                 .build();
     }
