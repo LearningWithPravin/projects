@@ -2,12 +2,14 @@ package com.calc;
 
 import akka.actor.ActorSystem;
 import akka.cluster.Cluster;
+import com.typesafe.config.Config;
+import com.typesafe.config.ConfigFactory;
 
 public class SeedMain {
 
     public static void main(String[] args) {
-        ActorSystem system = ActorSystem.create("ClusterSystem");
-        final Cluster cluster = Cluster.get(system);
+        Config config = ConfigFactory.load();
+        ActorSystem system = ActorSystem.create("ClusterSystem", config);
     }
 
 }
